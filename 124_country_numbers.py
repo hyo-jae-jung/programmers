@@ -38,8 +38,8 @@ import math
 
 def solution(dicimal_number:int):
     digit_number = 1
-    sum_digit_numbers = 1
-    while dicimal_number//sum_digit_numbers > 0:
+    sum_digit_numbers = 0
+    while dicimal_number > sum([3**i for i in range(0,digit_number)]):
         sum_digit_numbers += 3**digit_number
         digit_number += 1
     print(digit_number,sum_digit_numbers)
