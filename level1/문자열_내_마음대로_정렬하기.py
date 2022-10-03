@@ -2,8 +2,7 @@ strings = input().split()
 n = int(input())
 
 def solution(strings, n):
-    
-    return 
+    return sorted(sorted(strings), key=lambda i:i[n])
 
 if __name__ == "__main__":
     print(solution(strings,n))
