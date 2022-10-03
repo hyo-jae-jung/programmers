@@ -4,3 +4,7 @@ slicing
 
 ord, str
 
+bin
+
+zfill
+
