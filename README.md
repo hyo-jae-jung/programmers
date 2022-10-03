@@ -6,5 +6,5 @@ ord, str
 
 bin
 
-zfill
+rjust,ljust,zfill
 
