@@ -27,3 +27,9 @@ bin()
 >>> sum(a, [])
 
 [1, 2, 3, 4, 5, 6]"""
+
+"""
+https://docs.python.org/ko/3/howto/sorting.html
+
+sorted와 lambda에 대한 이해
+"""
