@@ -46,3 +46,7 @@ datetime
 https://docs.python.org/ko/3/library/datetime.html#module-datetime
 """
 
+itertools.takewhile
+
+소수문제 = 에라토스테네스의 체!!
+
