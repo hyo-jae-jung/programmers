@@ -38,6 +38,9 @@ OMG...
 sorted와 lambda에 대한 이해
 
 https://docs.python.org/ko/3/howto/sorting.html
+
+
+아주 중요!!
 """
 
 """
@@ -46,7 +49,7 @@ datetime
 https://docs.python.org/ko/3/library/datetime.html#module-datetime
 """
 
-itertools.takewhile
+itertools.takewhile : 브레이크 걸어주는 함수
 
 소수문제 = 에라토스테네스의 체!!
 
