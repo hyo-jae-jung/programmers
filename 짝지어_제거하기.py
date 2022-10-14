@@ -49,8 +49,21 @@ s = input()
 
 def solution(s):
     s_list = list(s)
-    if len(deq)%2==0 and 1 not in [deq.count(i)%2 for i in set(deq)]:
-    return
+    if len(s_list)%2==0 and 1 not in [s_list.count(i)%2 for i in set(s_list)]:
+        while True:
+            temp = []
+            while s_list:
+                print(s_list,temp)
+                if s_list[-1]==s_list[-2]:
+                    s_list.pop()
+                    s_list.pop()
+                else:
+                    temp.append(s_list.pop())
+
+            s_list = temp
+        return
+    else:
+        return 0
 
 if __name__ == "__main__":
     print(solution(s))
