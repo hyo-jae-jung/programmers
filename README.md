@@ -1,6 +1,6 @@
 ### Important keywords for me!
 
-slicing
+slicing [1:2:3]
 
 ord(), str()
 
