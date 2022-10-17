@@ -48,22 +48,21 @@ s = input()
 # 실패2
 
 def solution(s):
-    s_list = list(s)
-    if len(s_list)%2==0 and 1 not in [s_list.count(i)%2 for i in set(s_list)]:
-        while True:
-            temp = []
-            while s_list:
-                print(s_list,temp)
-                if s_list[-1]==s_list[-2]:
-                    s_list.pop()
-                    s_list.pop()
-                else:
-                    temp.append(s_list.pop())
 
-            s_list = temp
-        return
-    else:
+    if len(s)%2!=0:
         return 0
+    
+    if sum([s.count(i)%2 for i in list(set(s))]) > 0:
+        return 0
+
+    temp=''
+    for i in range(len(s)):
+        if temp[-1:]==s[i:i+1]:
+            temp=temp[:-1]
+        else:
+            temp+=s[i:i+1]
+
+    return 0 if temp else 1
 
 if __name__ == "__main__":
     print(solution(s))
