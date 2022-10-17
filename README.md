@@ -6,6 +6,8 @@ ord(), str()
 
 bin()
 
+int('숫자',n진수)
+
 .rjust, .ljust, .zfill
 
 """https://www.programiz.com/python-programming/operators
@@ -54,3 +56,9 @@ itertools.takewhile : 브레이크 걸어주는 함수
 소수문제 = 에라토스테네스의 체!!
 
 
+자력으로 stack문제 해결했는데 아직까지는 난이도가 낮아서 그런지
+loop step은 동일하게 가져가는 느낌이다. 
+
+stack문제에서 포인트는 1) 직전에 대한 대응, 2) 주어지는 값 이외 공간 만들기
+
+bool()
