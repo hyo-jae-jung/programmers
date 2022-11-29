@@ -62,3 +62,8 @@ loop step은 동일하게 가져가는 느낌이다.
 stack문제에서 포인트는 1) 직전에 대한 대응, 2) 주어지는 값 이외 공간 만들기
 
 bool()
+
+stable sorting
+-> 컬럼별 정렬이 유지되는 sorting
+inplace sorting
+-> memory complexity가 O(1), 즉 메모리를 상수만큼 사용하는 sorting
