@@ -67,3 +67,5 @@ stable sorting
 -> 컬럼별 정렬이 유지되는 sorting
 inplace sorting
 -> memory complexity가 O(1), 즉 메모리를 상수만큼 사용하는 sorting
+
+break time for 2 days...
