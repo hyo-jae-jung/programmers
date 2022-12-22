@@ -1,29 +1,24 @@
-from itertools import combinations as comb
-import pdb
+from collections import deque
 
-s = 'ttomaato'
+s = 'aaaaccc'
 
 def solution(s):
-    answer = []
-    k = 2
-
-    while len(s)>=2:
-        temp = []
-        # pdb.set_trace()
-        for i in set(s[:k]):
-            temp.append(s[:k].count(i))
-
-        for i,j in comb(temp,2):
-            if i==j:
-                answer.append(s[:k])
-                s = s[k:]
-                k=2
-                break
-        else:
-            k+=1
+    s_dict = {i:0 for i in s}
+    s = deque(s)
+    answer = deque()
+    temp = ''
+    while s:
+        a = s.popleft()
+        temp+=a
+        s_dict[a]+=1
+        v = [i for i in s_dict.values() if i > 0]
+        if len(set(v)) != len(v):
+            answer.append(temp)
+            temp = ''
+            s_dict = {i:0 for i in s}
     else:
-        answer.append(s)
-        
-    return answer
+        answer.append(temp)
+
+    return [i for i in answer if i]
 
 print(solution(s))
